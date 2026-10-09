@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pi-blue: #0096d6;
+  --color-pi-blue-dark: #007bb0;
+  --color-pi-blue-light: #e8f6fc;
+  --color-pi-orange: #f26522;
+  --color-pi-orange-dark: #d95518;
+  --color-pi-orange-light: #fff0e8;
+  --color-pi-green: #22a06b;
+  --color-pi-green-light: #e3f5ec;
+  --color-pi-red: #e5484d;
+  --color-pi-red-light: #fde8e8;
+  --color-pi-purple: #7c5cbf;
+  --color-pi-purple-light: #f0ebf8;
+  --color-pi-bg: #f4f6f9;
+  --color-pi-text: #1e293b;
+  --color-pi-muted: #64748b;
+  --color-pi-border: #e2e8f0;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-pi-bg);
+  color: var(--color-pi-text);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Page content padding — used across screens */
+.page-pad {
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .page-pad {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-pad {
+    padding: 2rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
